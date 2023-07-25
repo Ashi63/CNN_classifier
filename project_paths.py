@@ -2,7 +2,10 @@ import os
 from pathlib import Path
 
 # url to download data from.
-SOURCE_URL = "https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_3367a.zip"
+
+#SOURCE_URL = "https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_3367a.zip"
+SOURCE_PATH = "https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_5340.zip"
+print(SOURCE_URL)
 
 # get the base directory of the project (directory where this script is located)
 PROJECT_DIR = Path(__file__).parent
@@ -11,6 +14,8 @@ print('Project directory: ',PROJECT_DIR)
 # directory to store the data file.
 DATA_DIR = PROJECT_DIR/'data'
 print('Data directory: ', DATA_DIR)
+
+DATA_FILE = DATA_DIR/'data.zip'
 
 # directory to store the models built.
 MODELS_DIR = PROJECT_DIR/'models'
