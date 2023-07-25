@@ -2,7 +2,9 @@
 General Template for any Project.
 
 ## Create a python envirnment for the project
-"""python -m venv .venv"""
+"""
+python -m venv .venv
+"""
 
 
 ## Install the packages from requirements.txt
